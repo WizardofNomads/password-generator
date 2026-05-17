@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="main-container">
+            <h1 id="head1">Generate a</h1>
+            <h1 id="head2">random password</h1>
+            <h2>Never use an insecure password again.</h2>
+            <div id="options-container">
+                <button id="generateButton">Generate passwords</button>
+                <p>set password length between 10 to 15 characters</p>
+                <input id="password-length" type="text" value="15">
+                <label for="password-length">password length</label>
+                <div id="radio-container">
+                    <p>include special characters?</p>
+                    <div id="radio1">
+                        <input type="radio" id="yes-spec" name="special-char" value="yes" checked>
+                        <label for="yes-spec">yes</label>
+                        <br>
+                        <input type="radio" id="no-spec" name="special-char" value="no">
+                        <label for="no-spec">no</label>
+                    </div>
+                    <p>include numbers?</p>
+                    <div id="radio2">
+                        <input type="radio" id="yes-num" name="numbers" value="yes" checked>
+                        <label for="yes-num">yes</label>
+                        <br>
+                        <input type="radio" id="no-num" name="numbers" value="no">
+                        <label for="no-num">no</label>
+                    </div>
+                </div>
+            <div id="line-el"></div>
+            <div id="passwords-container">
+                <div id="pass1-el"></div>
+                <div id="pass2-el"></div>
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
